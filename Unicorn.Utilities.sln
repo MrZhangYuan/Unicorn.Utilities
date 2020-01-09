@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unicorn.Utilities", "src\Unicorn.Utilities\Unicorn.Utilities.csproj", "{84F0FB1D-C325-42D5-86E9-4D97DC3FD931}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84F0FB1D-C325-42D5-86E9-4D97DC3FD931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F0FB1D-C325-42D5-86E9-4D97DC3FD931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F0FB1D-C325-42D5-86E9-4D97DC3FD931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84F0FB1D-C325-42D5-86E9-4D97DC3FD931}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33BD04EF-7B5A-40D3-9651-1716FA9A7F62}
+	EndGlobalSection
+EndGlobal
