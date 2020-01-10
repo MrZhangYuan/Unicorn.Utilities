@@ -11,6 +11,8 @@
     <RepositoryUrl>https://github.com/MrZhangYuan/Unicorn.Utilities.git</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>WPF;C#;.NET;.NET Core;WPF Control Library</PackageTags>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
