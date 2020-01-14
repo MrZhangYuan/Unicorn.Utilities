@@ -15,6 +15,29 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Bitmaps\Window\bottom.png" />
+    <None Remove="Resources\Bitmaps\Window\bottomleft.png" />
+    <None Remove="Resources\Bitmaps\Window\bottomright.png" />
+    <None Remove="Resources\Bitmaps\Window\cornerbottomleft.png" />
+    <None Remove="Resources\Bitmaps\Window\cornerbottomright.png" />
+    <None Remove="Resources\Bitmaps\Window\cornertopleft.png" />
+    <None Remove="Resources\Bitmaps\Window\cornertopright.png" />
+    <None Remove="Resources\Bitmaps\Window\left.png" />
+    <None Remove="Resources\Bitmaps\Window\leftbottom.png" />
+    <None Remove="Resources\Bitmaps\Window\lefttop.png" />
+    <None Remove="Resources\Bitmaps\Window\right.png" />
+    <None Remove="Resources\Bitmaps\Window\rightbottom.png" />
+    <None Remove="Resources\Bitmaps\Window\righttop.png" />
+    <None Remove="Resources\Bitmaps\Window\top.png" />
+    <None Remove="Resources\Bitmaps\Window\topleft.png" />
+    <None Remove="Resources\Bitmaps\Window\topright.png" />
+  </ItemGroup>
+
   <ItemGroup>
     <Compile Update="TransformAnimations.xaml.cs">
       <SubType>Code</SubType>
@@ -28,6 +51,25 @@
     <Page Update="TransformAnimations.xaml">
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Bitmaps\Window\bottom.png" />
+    <Resource Include="Resources\Bitmaps\Window\bottomleft.png" />
+    <Resource Include="Resources\Bitmaps\Window\bottomright.png" />
+    <Resource Include="Resources\Bitmaps\Window\cornerbottomleft.png" />
+    <Resource Include="Resources\Bitmaps\Window\cornerbottomright.png" />
+    <Resource Include="Resources\Bitmaps\Window\cornertopleft.png" />
+    <Resource Include="Resources\Bitmaps\Window\cornertopright.png" />
+    <Resource Include="Resources\Bitmaps\Window\left.png" />
+    <Resource Include="Resources\Bitmaps\Window\leftbottom.png" />
+    <Resource Include="Resources\Bitmaps\Window\lefttop.png" />
+    <Resource Include="Resources\Bitmaps\Window\right.png" />
+    <Resource Include="Resources\Bitmaps\Window\rightbottom.png" />
+    <Resource Include="Resources\Bitmaps\Window\righttop.png" />
+    <Resource Include="Resources\Bitmaps\Window\top.png" />
+    <Resource Include="Resources\Bitmaps\Window\topleft.png" />
+    <Resource Include="Resources\Bitmaps\Window\topright.png" />
   </ItemGroup>
 
 </Project>
