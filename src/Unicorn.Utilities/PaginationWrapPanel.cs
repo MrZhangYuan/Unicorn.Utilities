@@ -411,6 +411,9 @@ namespace Unicorn.Utilities
             var _actualColumns = this._sumCount <= this._columns ? this._sumCount : this._columns;
 
             this._pageCount = this._rows * this._columns - this.AnchoredItemCount();
+
+            this._pageCount = Math.Max(1, this._pageCount);
+
             int maxpage = this._sumCount / this._pageCount;
             if (this._sumCount % this._pageCount > 0)
             {

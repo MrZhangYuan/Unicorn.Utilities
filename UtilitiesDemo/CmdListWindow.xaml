@@ -1,0 +1,42 @@
+﻿<utilities:CustomChromeWindow
+    x:Class="UtilitiesDemo.CmdListWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:UtilitiesDemo"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ucmd="clr-namespace:Unicorn.Utilities.Commands;assembly=Unicorn.Utilities"
+    xmlns:utilities="clr-namespace:Unicorn.Utilities;assembly=Unicorn.Utilities"
+    Title="CmdListWindow"
+    Width="200"
+    Height="800"
+    ActiveGlowColor="Black"
+    InactiveGlowColor="Black"
+    ResizeMode="CanMinimize"
+    mc:Ignorable="d">
+    <!--<WindowChrome.WindowChrome>
+        <WindowChrome
+            CaptionHeight="0"
+            CornerRadius="0"
+            GlassFrameThickness="1"
+            NonClientFrameEdges="None"
+            ResizeBorderThickness="5"
+            UseAeroCaptionButtons="False" />
+    </WindowChrome.WindowChrome>-->
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+        <StackPanel.Resources>
+            <Style BasedOn="{StaticResource DarkDefaultButtonStyle}" TargetType="Button">
+                <Setter Property="Height" Value="32" />
+                <Setter Property="MinWidth" Value="100" />
+                <Setter Property="Margin" Value="0,10" />
+            </Style>
+        </StackPanel.Resources>
+        <Button Command="{Binding Source={x:Static ucmd:DefaultUICommandManager.Instance}, Path=[GreedyWrapPanel]}" Content="GreedyWrapPanel" />
+        <Button Command="{Binding Source={x:Static ucmd:DefaultUICommandManager.Instance}, Path=[LazyGrid]}" Content="LazyGrid" />
+        <Button Command="{Binding Source={x:Static ucmd:DefaultUICommandManager.Instance}, Path=[PaginationWrapPanel]}" Content="PaginationWrapPanel" />
+        <Button Command="{Binding Source={x:Static ucmd:DefaultUICommandManager.Instance}, Path=[SpacingWrapPanel]}" Content="SpacingWrapPanel" />
+        <Button Command="{Binding Source={x:Static ucmd:DefaultUICommandManager.Instance}, Path=[UniformLineGrid]}" Content="UniformLineGrid" />
+        <Button Command="{Binding Source={x:Static ucmd:DefaultUICommandManager.Instance}, Path=[ProgressRing]}" Content="ProgressRing" />
+        <Button Command="{Binding Source={x:Static ucmd:DefaultUICommandManager.Instance}, Path=[Exit]}" Content="退出" />
+    </StackPanel>
+</utilities:CustomChromeWindow>

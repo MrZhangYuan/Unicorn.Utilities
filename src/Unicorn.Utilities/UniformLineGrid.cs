@@ -56,11 +56,11 @@ namespace Unicorn.Utilities
             }
         }
 
-        public double LineStyle
+        public LineStyle LineStyle
         {
             get
             {
-                return (double)GetValue(ControlLinesRenderer.LineStyleProperty);
+                return (LineStyle)GetValue(ControlLinesRenderer.LineStyleProperty);
             }
             set
             {
