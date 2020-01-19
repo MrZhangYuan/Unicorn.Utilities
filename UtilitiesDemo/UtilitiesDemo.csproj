@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Unicorn.ViewManager" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\src\Unicorn.Utilities\Unicorn.Utilities.csproj" />
   </ItemGroup>
 

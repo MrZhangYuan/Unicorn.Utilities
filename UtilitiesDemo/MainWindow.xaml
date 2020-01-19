@@ -7,15 +7,34 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:utilities="clr-namespace:Unicorn.Utilities;assembly=Unicorn.Utilities"
     Title="MainWindow"
-    Width="800"
-    Height="450"
+    Width="1200"
+    Height="720"
     ActiveGlowColor="Black"
+    Background="White"
     InactiveGlowColor="Black"
+    WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
-    <Grid>
-        <utilities:WindowTitleBar
-            Height="40"
-            VerticalAlignment="Top"
-            Background="Transparent" />
-    </Grid>
+    <Window.Template>
+        <ControlTemplate TargetType="Window">
+            <Border Background="{TemplateBinding Background}">
+                <Grid>
+                    <!--<utilities:WindowTitleBar
+                        Height="40"
+                        VerticalAlignment="Top"
+                        Panel.ZIndex="1"
+                        Background="Transparent" />-->
+                    <ContentPresenter />
+                </Grid>
+            </Border>
+        </ControlTemplate>
+    </Window.Template>
+    <WindowChrome.WindowChrome>
+        <WindowChrome
+            CaptionHeight="60"
+            CornerRadius="0"
+            GlassFrameThickness="1"
+            NonClientFrameEdges="None"
+            ResizeBorderThickness="5"
+            UseAeroCaptionButtons="False" />
+    </WindowChrome.WindowChrome>
 </utilities:CustomChromeWindow>
