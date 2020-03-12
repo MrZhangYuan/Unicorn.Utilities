@@ -5,6 +5,7 @@ using System.Windows.Threading;
 
 namespace Unicorn.Utilities.Util
 {
+
     public class TimerBuffer<T>
     {
         private DispatcherTimer _dispatcherTimer = null;

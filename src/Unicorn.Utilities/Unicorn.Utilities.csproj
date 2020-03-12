@@ -5,7 +5,7 @@
     <UseWPF>true</UseWPF>
     <Authors>Mr.Zhang</Authors>
     <Product>Unicorn</Product>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <Description>Unicorn.ViewManager 的WPF基础组件库，包含一些控件、命令等。</Description>
     <PackageProjectUrl>https://github.com/MrZhangYuan/Unicorn.Utilities</PackageProjectUrl>
     <RepositoryUrl>https://github.com/MrZhangYuan/Unicorn.Utilities.git</RepositoryUrl>
