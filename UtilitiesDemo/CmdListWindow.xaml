@@ -37,6 +37,7 @@
         <Button Command="{Binding Source={x:Static ucmd:DefaultUICommandManager.Instance}, Path=[SpacingWrapPanel]}" Content="SpacingWrapPanel" />
         <Button Command="{Binding Source={x:Static ucmd:DefaultUICommandManager.Instance}, Path=[UniformLineGrid]}" Content="UniformLineGrid" />
         <Button Command="{Binding Source={x:Static ucmd:DefaultUICommandManager.Instance}, Path=[ProgressRing]}" Content="ProgressRing" />
+        <Button Command="{Binding Source={x:Static ucmd:DefaultUICommandManager.Instance}, Path=[ViewerPanel]}" Content="ViewerPanel" />
         <Button Command="{Binding Source={x:Static ucmd:DefaultUICommandManager.Instance}, Path=[Exit]}" Content="退出" />
     </StackPanel>
 </utilities:CustomChromeWindow>

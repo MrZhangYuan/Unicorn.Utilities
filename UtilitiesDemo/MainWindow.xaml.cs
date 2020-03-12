@@ -107,6 +107,10 @@ namespace UtilitiesDemo
                     ViewManager.Instance.Show(ProgressRingDialog.Instance);
                     break;
 
+                case "ViewerPanel":
+                    ViewManager.Instance.Show(ViewerPanelDialog.Instance);
+                    break;
+
                 case "Exit":
                     MainWindow.Instance.Close();
                     break;
